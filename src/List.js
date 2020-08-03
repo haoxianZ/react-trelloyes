@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 import './List.css';
 function List(props) {
+    if(!props.cards) return null;
     return (
         <section className='List'>
             <header className="List-header">
